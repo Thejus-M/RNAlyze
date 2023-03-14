@@ -12,8 +12,7 @@
 <div class="container">
     
     <h1>Rna sequencer</h1><br>
-    <form action="" method="post">
-        {% csrf_token %}
+    <form action="" method="get">
         <textarea name="rna" id="" 
         cols="30" rows="10" placeholder="Enter your Rna"></textarea>
         <br><br>
@@ -32,23 +31,23 @@
     </tr>
     <tr>
       <td>Orf Length</td>
-      <td>{{features.0.0}}</td>
+      <td>{{features.0.0|floatformat:4}}</td>
     </tr>
     <tr>
       <td>GC Content</td>
-      <td>{{features.0.1}}</td>
+      <td>{{features.0.1|floatformat:4}}</td>
     </tr>
     <tr>
       <td>Transcript Length</td>
-      <td>{{features.0.2}}</td>
+      <td>{{features.0.2|floatformat:4}}</td>
     </tr>
     <tr>
       <td>CPG Island</td>
-      <td>{{features.0.3}}</td>
+      <td>{{features.0.3|floatformat:4}}</td>
     </tr>
     <tr>
       <td>Fickett Score</td>
-      <td>{{features.0.4}}</td>
+      <td>{{features.0.4|floatformat:4}}</td>
     </tr>
   </table>
   <br><br>
