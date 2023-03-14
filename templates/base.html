@@ -7,9 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>atcg.Bio</title>
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    
+    {% block style %}
+        
+    {% endblock style %}
+        
 </head>
 <body>
     {% include 'navbar.html' %}
     
+    {% block content %}
+        
+    {% endblock content %}
+        
 </body>
 </html>
