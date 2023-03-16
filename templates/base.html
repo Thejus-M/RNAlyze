@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>atcg.Bio</title>
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     
     {% block style %}
         
@@ -19,6 +20,6 @@
     {% block content %}
         
     {% endblock content %}
-        
+    {% include 'footer.html' %}
 </body>
 </html>

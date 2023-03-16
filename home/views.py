@@ -18,3 +18,9 @@ def home(request):
             result=None
         context={'seq':seq,'features':features,'result':result}
     return render(request, 'home/home.html',context)
+
+def main(request):
+    return render(request, 'home/main.html')
+
+def about(request):
+    return render(request,'home/about.html')

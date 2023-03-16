@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block style %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    {% endblock style %}
+        
+
+{% block content %}
+<br><br>
+<br><br>
+<div class="box">
+    <img src="{% static 'img/bg.png' %}" alt="Logo-with-Name">
+    
+    <br>
+    <a href="{% url 'fun' %}">
+        <button>Try Now</button>
+    </a>
+</div>
+
+{% endblock content %}

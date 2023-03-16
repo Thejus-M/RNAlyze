@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.logo img{
+  height: 70px;
+}
+
 .html {
   font-size: 62.5%;
 }
@@ -26,7 +30,8 @@
   position: fixed;
   width: 100%;
   background: #010725;
-  color: #fff;
+  /* color: #010725; */
+  color: wheat;
 }
 
 .navbar-container {
@@ -55,7 +60,7 @@ button {
 }
 
 .navbar a {
-  color: #fff;
+  color: #c9e7ee;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
@@ -72,16 +77,16 @@ button {
 }
 
 button:hover a {
-  color: #0088a9;
+  color: #6ba7b6;
 }
 
 button:hover {
   background: #fff;
-  color: #0088a9;
+  color: #6cb1c2;
 }
 
 .navbar a:hover {
-  color: #0088a9;
+  color: #5db3c9;
 }
 
 @media (max-width: 768px) {

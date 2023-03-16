@@ -1,3 +1,4 @@
+{% load static %}
 <nav class="navbar">
     <div class="navbar-container container">
         <input type="checkbox" name="" id="" />
@@ -8,8 +9,15 @@
         </div>
         <ul class="menu-items">
             <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <button><a href="{% url 'fun' %}">Try Out</a></button>
         </ul>
-        <h1 class="logo">atcg.Bio</h1>
+        <a href="{% url 'home' %}">
+
+            <h1 class="logo">
+
+                <img src="{% static 'img/namelogo.png' %}" alt="Logo">
+            </h1>
+        </a>
     </div>
 </nav>
