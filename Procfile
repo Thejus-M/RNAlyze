@@ -1,0 +1,1 @@
+web: gunicorn atcgBio.wsgi --log-file -
