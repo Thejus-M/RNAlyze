@@ -1,20 +1,27 @@
 {% extends 'base.html' %}
 {% load static %}
 
-    {% block style %}
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    {% endblock style %}
-        
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% endblock style %}
+
 
 {% block content %}
 <br><br>
 <br><br>
 <div class="box">
     <img src="{% static 'img/bg.png' %}" alt="Logo-with-Name">
-    
-    <br>
-    <a href="{% url 'fun' %}">
+    <br>RNAlyse is a webapp that lets you find if a given RNAs are coding or not. It is free, easy to use and fast. No
+    data
+    is saved.
+
+    RNAlyse can help biologists identify whether their RNA sequences are coding or not. This will help them understand
+    the function of the gene they are studying and how their cDNAs are working together with other genes in order to
+    produce proteins.
+    <br><br><br>
+    &nbsp;<a class="but" href="{% url 'fun' %}">
+        <br>
         <button>Try Now</button>
     </a>
 </div>
