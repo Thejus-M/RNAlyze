@@ -1,7 +1,8 @@
 from django.shortcuts import render
 import pickle
 # import sklearn
-from .mainfun import create_feature
+# from .mainfun import create_feature
+from .features import calculate_features
 
 # Create your views here.
 def home(request):
@@ -10,7 +11,10 @@ def home(request):
     if request.method == 'GET':
         if request.GET.get('rna'):
             seq=request.GET.get('rna')
-            features = create_feature(seq) 
+            seq=seq.replace("\n", "")
+            seq=seq.replace(" ", "")
+            seq=seq.replace("%0D%0", "")
+            features = calculate_features(seq)
             result=model.predict(features)
         else:
             seq=''
