@@ -8,9 +8,10 @@ from .features import calculate_features
 def home(request):
     context={}
     model = pickle.load(open('model.pkl', 'rb'))
-    if request.method == 'GET':
-        if request.GET.get('rna'):
-            seq=request.GET.get('rna')
+    if request.method == 'POST':
+        if request.POST:
+            data = request.POST
+            seq=data.get("rna")
             seq=seq.replace("\n", "")
             seq=seq.replace(" ", "")
             seq=seq.replace("%0D%0", "")

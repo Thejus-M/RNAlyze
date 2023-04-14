@@ -61,10 +61,10 @@ def calculate_features(seq):
     print("values : ",dataset)
     return [dataset]
 
-seq = '''GCACATCCTCTCCTCTCTCCTTCTCTCTCTGCCCGGAGCTGGTTTCCGTCTCTCGGCTCG
-GGGCTGGAACTCCGGCCCAACCTAGGCGCGCAGCCGCCACGAGATGGCGCACTTCCGATC
-'''
-seq=seq.replace("\n", "")
-seq=seq.replace(" ", "")
-# print(seq)
-print(calculate_features(seq))
+# seq = '''GCACATCCTCTCCTCTCTCCTTCTCTCTCTGCCCGGAGCTGGTTTCCGTCTCTCGGCTCG
+# GGGCTGGAACTCCGGCCCAACCTAGGCGCGCAGCCGCCACGAGATGGCGCACTTCCGATC
+# '''
+# seq=seq.replace("\n", "")
+# seq=seq.replace(" ", "")
+# # print(seq)
+# print(calculate_features(seq))
