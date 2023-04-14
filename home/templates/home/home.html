@@ -12,7 +12,8 @@
 <div class="container">
     
     <h1>Rna sequencer</h1><br>
-    <form action="" method="get">
+    <form action="" method="post">
+      {% csrf_token %}
         <textarea name="rna" id="" 
         cols="30" rows="10" placeholder="Enter your Rna"></textarea>
         <br><br>
@@ -52,9 +53,16 @@
   </table>
   <br><br>
   <div class="value">
+    {{result.0}}
+    {{features}}
+    
     <h3>The Sequences is a 
-        {{result}}
-        {{features}}
+    {% if result.0 == 0 %}
+          Non coding RNA
+        {% else %}
+          Coding RNA
+        {% endif %}
+          
     </h3>
     {% endif %}
     <br><br>
